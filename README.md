@@ -60,12 +60,13 @@ Course: Getting and Cleaning Data, December 2014
 - To have the last version of the variables' names available for the code book, I write them to a text file
 
 ##Step 5: Create data set with the average of each variable for each activity and each subject##
-- We need to calculate the mean in each column for the combinations of subjectid an activity. This will result in a data frame of 30*6=180 lines and the original 86 variables (and the 2 leading columns)
+- We need to calculate the mean in each column for the combinations of subjectid and activity. This will result in a data frame of 30*6=180 lines and the original 86 variables (and the 2 leading columns)
 - Write the data to a file using write.table() with row.name=FALSE. This script creates a filed called "course_project_result.txt".
 
 ##How to run the script##
 To run the script
 - make sure the directory "UCI HAR Dataset" is your working directory
+- the package "reshape2" needs to be installed and loaded
 - source the run_analysis.R script
 - start it by callling the function run_analysis()
 	
